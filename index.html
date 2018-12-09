@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <main id="main">
+    <h1 id="title">Survey Form</h1>
+    <hr>
+    <p id="description">Let's make the shop better together!</p>
+    <form action="#" id="survey-form">
+
+      <div id="text-group">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your e-mail" required>
+
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" name="number" min="16" max="100" value="16" placeholder="Your age" required>
+      </div>
+
+
+      <div id="radio-group">
+        <p>Who assisted you with your purchase:</p>
+        <label for="dez">
+          <input id="dez" type="radio" name="seller" value="Dez"> Dez
+        </label>
+
+        <label for="ben">
+          <input id="ben" type="radio" name="seller" value="Ben"> Ben
+        </label>
+
+        <label for="ashley">
+          <input id="ashley" type="radio" name="seller" value="Ashley"> Ashley
+        </label>
+
+        <label for="noone">
+          <input id="noone" type="radio" name="seller" value="Noone"> Noone
+        </label>
+      </div>
+
+
+      <div id="dropdown-list">
+        <p>What type of product did you purchase:</p>
+        <select name="purchase-list" id="dropdown">
+          <option disabled selected value>- Select -</option>
+          <option value="rc-quadcopter">RC Quadcopter</option>
+          <option value="rc-plane">RC Plane</option>
+          <option value="rc-car">RC Car</option>
+          <option value="rc-boat">RC Boat</option>
+          <option value="spare-parts">Spare Parts</option>
+        </select>
+      </div>
+
+
+      <div id="checbox-group">
+        <p>What type of products would you like to see in our store in the future:</p>
+        <label for="batteries">
+          <input id="batteries" type="checkbox" name="future-items" value="Batteries"> Batteries
+        </label>
+        <label for="kites">
+          <input id="kites" type="checkbox" name="future-items" value="Kites"> Kites
+        </label>
+        <label for="e-bikes">
+          <input id="e-bikes" type="checkbox" name="future-items" value="E-bikes"> E-bikes
+        </label>
+        <label for="e-bike-kits">
+          <input id="e-bike-kits" type="checkbox" name="future-items" value="E-bike Kits"> E-bike Kits
+        </label>
+        <label for="soldering-tools">
+          <input id="soldering-tools" type="checkbox" name="future-items" value="Soldering tools"> Soldering Tools
+        </label>
+      </div>
+
+      <div id="textarea-group">
+        <p>Your additional comments:</p>
+        <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Your comment..."></textarea>
+      </div>
+
+      <input type="submit" value="Submit" id="submit">
+
+    </form>
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
