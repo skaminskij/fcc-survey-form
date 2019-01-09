@@ -4,44 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Survey Form</title>
 </head>
 <body>
   <main id="main">
     <h1 id="title">Survey Form</h1>
-    <hr>
     <p id="description">Let's make the shop better together!</p>
+    <hr>
+
     <form action="#" id="survey-form">
 
       <div id="text-group">
-        <label id="name-label" for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required>
+          <label id="name-label" for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
 
-        <label id="email-label" for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your e-mail" required>
+          <label id="email-label" for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your e-mail" required>
 
-        <label id="number-label" for="number">Age:</label>
-        <input type="number" id="number" name="number" min="16" max="100" value="16" placeholder="Your age" required>
+          <label id="number-label" for="number">Age:</label>
+          <input type="number" id="number" name="number" min="16" max="100" value="16" placeholder="Your age" required>
       </div>
 
 
       <div id="radio-group">
         <p>Who assisted you with your purchase:</p>
-        <label for="dez">
-          <input id="dez" type="radio" name="seller" value="Dez"> Dez
-        </label>
+        <div class="radio-buttons">
+          <label for="dez">
+            <input id="dez" type="radio" name="seller" value="Dez"> Dez
+          </label>
 
-        <label for="ben">
-          <input id="ben" type="radio" name="seller" value="Ben"> Ben
-        </label>
+          <label for="ben">
+            <input id="ben" type="radio" name="seller" value="Ben"> Ben
+          </label>
 
-        <label for="ashley">
-          <input id="ashley" type="radio" name="seller" value="Ashley"> Ashley
-        </label>
+          <label for="ashley">
+            <input id="ashley" type="radio" name="seller" value="Ashley"> Ashley
+          </label>
 
-        <label for="noone">
-          <input id="noone" type="radio" name="seller" value="Noone"> Noone
-        </label>
+          <label for="noone">
+            <input id="noone" type="radio" name="seller" value="Noone"> Noone
+          </label>
+        </div>
       </div>
 
 
